@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printalphabet.go                                   :+:      :+:    :+:   */
+/*   printdigits.go                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kahori <kahori@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/25 14:05:36 by kahori            #+#    #+#             */
-/*   Updated: 2024/06/25 14:18:59 by kahori           ###   ########.fr       */
+/*   Created: 2024/06/25 14:17:34 by kahori            #+#    #+#             */
+/*   Updated: 2024/06/25 14:18:35 by kahori           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ import(
 	"ft"
 )
 
-func PrintAlphabet() {
-	for c := 'a'; c <= 'z'; c++ {
-		ft.PrintRune(c)
+func PrintDigits(){
+	for i := '0'; i <= '9'; i++{
+		ft.PrintRune(i)
 	}
 	ft.PrintRune('\n')
 }

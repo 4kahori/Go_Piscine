@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printalphabet.go                                   :+:      :+:    :+:   */
+/*   isnegative.go                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kahori <kahori@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/25 14:05:36 by kahori            #+#    #+#             */
-/*   Updated: 2024/06/25 14:18:59 by kahori           ###   ########.fr       */
+/*   Created: 2024/06/25 14:35:47 by kahori            #+#    #+#             */
+/*   Updated: 2024/06/25 14:38:57 by kahori           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 package piscine
 
-import(
+import (
 	"ft"
 )
 
-func PrintAlphabet() {
-	for c := 'a'; c <= 'z'; c++ {
-		ft.PrintRune(c)
+func IsNegative(nb int) {
+	if nb < 0 {
+		ft.PrintRune('T')
+	} else {
+		ft.PrintRune('F')
 	}
 	ft.PrintRune('\n')
 }

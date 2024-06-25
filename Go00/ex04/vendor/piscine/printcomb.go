@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printalphabet.go                                   :+:      :+:    :+:   */
+/*   printcomb.go                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kahori <kahori@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/25 14:05:36 by kahori            #+#    #+#             */
-/*   Updated: 2024/06/25 14:18:59 by kahori           ###   ########.fr       */
+/*   Created: 2024/06/25 14:46:44 by kahori            #+#    #+#             */
+/*   Updated: 2024/06/25 14:49:14 by kahori           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 package piscine
 
-import(
+import (
 	"ft"
 )
 
-func PrintAlphabet() {
-	for c := 'a'; c <= 'z'; c++ {
-		ft.PrintRune(c)
+func PrintComb() {
+	for a := 0; a <= 7; a++ {
+		for b := a + 1; b <= 8; b++ {
+			for c := b + 1; c <= 9; c++ {
+				ft.PrintRune(rune(a + '0'))
+				ft.PrintRune(rune(b + '0'))
+				ft.PrintRune(rune(c + '0'))
+				if a != 7 {
+					ft.PrintRune(',')
+					ft.PrintRune(' ')
+				}
+			}
+		}
 	}
 	ft.PrintRune('\n')
+
 }
