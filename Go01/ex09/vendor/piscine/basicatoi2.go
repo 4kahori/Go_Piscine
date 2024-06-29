@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ultimatedivmod.go                                  :+:      :+:    :+:   */
+/*   basicatoi2.go                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kahori <kahori@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/27 14:07:30 by kahori            #+#    #+#             */
-/*   Updated: 2024/06/27 14:33:38 by kahori           ###   ########.fr       */
+/*   Created: 2024/06/27 16:41:08 by kahori            #+#    #+#             */
+/*   Updated: 2024/06/27 16:45:25 by kahori           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 package piscine
 
-func UltimateDivMod(a *int, b *int) {
-	div := *a / *b
-	mod := *a % *b
-	
-	*a = div
-	*b = mod
+func BasicAtoi2(s string) int {
+	n := 0
+	for _, r := range s {
+		if r < '0' || r > '9' {
+			return 0
+		}
+		n = n * 10 + int(r - '0')
+	}
+	return n
 }

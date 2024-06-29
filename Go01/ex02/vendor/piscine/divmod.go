@@ -1,6 +1,14 @@
-// • This function will divide an int a by another int b.
-// • The result of this division will be stored in the int pointed by div.
-// • The remainder of this division will be stored in the int pointed by mod.
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   divmod.go                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kahori <kahori@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/06/27 14:08:21 by kahori            #+#    #+#             */
+/*   Updated: 2024/06/27 14:08:22 by kahori           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 package piscine
 

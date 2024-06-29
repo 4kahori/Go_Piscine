@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ultimatedivmod.go                                  :+:      :+:    :+:   */
+/*   swap.go                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kahori <kahori@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/27 14:07:30 by kahori            #+#    #+#             */
-/*   Updated: 2024/06/27 14:33:38 by kahori           ###   ########.fr       */
+/*   Created: 2024/06/27 16:00:22 by kahori            #+#    #+#             */
+/*   Updated: 2024/06/27 16:03:06 by kahori           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 package piscine
-
-func UltimateDivMod(a *int, b *int) {
-	div := *a / *b
-	mod := *a % *b
-	
-	*a = div
-	*b = mod
+func Swap(a *int, b *int) {
+	tmp := *a
+	*a = *b
+	*b = tmp
 }
